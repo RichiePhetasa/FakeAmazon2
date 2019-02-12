@@ -16,6 +16,9 @@
             width: 100vw;
             background-color: #EAEDED;
         }
+        a {
+            text-decoration:  none;
+        }
 
         .header-container {
             background-color: black;
@@ -58,28 +61,31 @@
             text-align:center;
         }
         .top-search {
-            width: 400px;
+            width: 600px;
             margin-top: 5px;
            
         }
+      
+        
         .top-nav-items {
             text-align:left;
             margin-top: 18px;
-            margin-left: 37px;
+            margin-left: 40px;
         }
         .top-nav-items > li {
             display: inline-block;
+            margin-right: 5px;
         }
         .top-nav-items > li > a {
             font-size:8px;
             text-decoration: none;
             color: #fff;
             padding: 4px;
-
+            display: block;
         }
-        .top-nav-items > li:hover {
+        .top-nav-items > li> a:hover {
             border:1px solid #fff;
-            border-radius: 5px;
+            border-radius: 2px;
         }
         ]
         .top-search-button {
@@ -89,8 +95,8 @@
         }
 
         .top-right {
-            width: 220px;
-            float: right;
+            width: 230px;
+            float: left;
             overflow: hidden;
             
         }
@@ -100,17 +106,77 @@
         
 
         .main-body {
-            width: 90vw;
+            width: 80vw;
             min-height: 800px;
-            background-color: brown;
+            background-color: transparent;
             margin: 0px auto;
         }
-
+        .main-top-container > img {
+            max-width: 100%;
+        }
+        .main-top-items {
+            text-align: center;
+            margin-top: -150px;
+        }
+        .main-top-items > li {
+            display: inline-block;
+            background-color: #fff;
+            width: 20%;
+            text-align: center;
+            padding: 10px;
+         
+        }
+        .main-top-items > li:last-child {
+            background-color: transparent;
+        }
+        .btn-sign-in {
+            background-color: #f0c14b;
+            border-radius: 1px;
+            border-color: #a88734 #9c7e31 #846a29;
+            color: #111;
+            font-size: 8px;
+            padding:8px 20px;
+            width: 100%;
+        }
+        .last-child {
+            background-color: white;
+            display: inline-block;
+            margin-bottom: 22px;
+            padding: 10px;
+        }
+        .main-top-items > li > img, .main-bottom-container > li > img{
+            max-width: 100%;
+        }
+        .main-top-items > li >h2,  .main-top-items > li > span > h2 {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .main-top-items > li > p, .main-top-items > li > a{
+            font-size: 10px;
+        }
+        .main-bottom-container {
+            list-style-type: none;
+        }
+        .main-bottom-container > li {
+            width: 100%;
+            background-color: white;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+        .bg-gradient {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4e12fe+2,4e12fe+22,9677f5+46,9677f5+60,eaeded+78,eaeded+89,eaeded+100 */
+            background: #4e12fe; /* Old browsers */
+            background: -moz-linear-gradient(top, #4e12fe 2%, #4e12fe 22%, #9677f5 46%, #9677f5 60%, #eaeded 78%, #eaeded 89%, #eaeded 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #4e12fe 2%,#4e12fe 22%,#9677f5 46%,#9677f5 60%,#eaeded 78%,#eaeded 89%,#eaeded 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #4e12fe 2%,#4e12fe 22%,#9677f5 46%,#9677f5 60%,#eaeded 78%,#eaeded 89%,#eaeded 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e12fe', endColorstr='#eaeded',GradientType=0 ); /* IE6-9 */
+        }
         .footer-sidebar-container {
             width: 100vw;
             min-height: 500px;
             background-color: aquamarine;
         }
+    
     </style>
 </head>
 
@@ -155,7 +221,49 @@
         </div>
     </header>
     <div class="main-body">
-        Main Body
+        <div class="main-top-container">
+            <img src="./img/bg_cover.jpg" alt="banner">
+            <ul class="main-top-items bg-gradient">
+                <li>
+                    <h2>Bargain finds</h2>
+                    <img src="./img/sm_img1.jpg" alt="img 1">
+                    <p>Device accessories</p>
+                    <a href="#">See more</a>
+                </li>
+                <li>
+                    <h2>Bargain finds</h2>
+                    <img src="./img/sm_img2.jpg" alt="img 1">
+                    <p>Device accessories</p>
+                    <a href="#">See more</a>
+                </li>
+                <li>
+                    <h2>Bargain finds</h2>
+                    <img src="./img/sm_img3.jpg" alt="img 1">
+                    <p>Device accessories</p>
+                    <a href="#">See more</a>
+                </li>
+                <li>
+                    <span class="last-child">
+                        <h2>Bargain finds</h2>
+                        <button class="btn-sign-in" type="button">Sign in Security</button>
+                    </span>
+
+                    <img src="./img/sm_img4.png" alt="img 1">
+
+                </li>
+            </ul>
+        </div>
+        <ul class="main-bottom-container">
+            <li>
+                <img src="./img/bg_banner1.png" alt="img 1">
+            </li>
+            <li>
+                <img src="./img/bg_banner2.png" alt="img 2">
+            </li>
+            <li>
+                <img src="./img/bg_banner3.png" alt="img 3">
+            </li>
+        </ul>
     </div>
     <div class="footer-sidebar-container">
         Footer Side Bar Container
